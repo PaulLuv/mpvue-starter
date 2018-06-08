@@ -1,5 +1,6 @@
 <template>
   <div class="page">
+    <banner :banners="banners"/>
     <view class="weui-cells__title">WeuiCell 使用示例</view>
     <view class="weui-cells weui-cells_after-title">
       <weui-cell title="标题文案"  detail="说明文案" />
