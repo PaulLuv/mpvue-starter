@@ -57,7 +57,7 @@ export default {
     maxlength: {
       // 最大输入长度，设置为 -1 的时候不限制最大长度
       type: Number,
-      default: 140
+      default: 11
     },
     cursorSpacing: {
       // 指定光标与键盘的距离，单位 px 。取 input 距离底部的距离和 cursor-spacing 指定的

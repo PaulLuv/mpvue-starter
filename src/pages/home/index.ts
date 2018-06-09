@@ -9,10 +9,12 @@ import WeuiSwitchCell from "@/components/weui/WeuiSwitchCell.vue";
 import WeuiCheckboxCell from "@/components/weui/WeuiCheckboxCell.vue";
 import WeuiRadioGroup from "@/components/weui/WeuiRadioGroup.vue";
 import Banner from "@/components/common/Banner.vue";
+import WeuiInputCodeCell from "@/components/weui/WeuiInputCodeCell.vue";
 
 // 必须使用装饰器的方式来指定component
 @Component({
   components: {
+    WeuiInputCodeCell,
     Banner,
     WeuiCell,
     WeuiInputCell,
