@@ -1,6 +1,6 @@
 <template>
 <div>
-<view class="weui-cells__title">{{title}}</view>
+<view class="weui-cells__title radio_group_title">{{title}}</view>
 <view class="weui-cells weui-cells_after-title">
   <radio-group @change="radioChange">
     <label class="weui-cell weui-check__label" v-for="item in radioItems" :key="item.value">
@@ -42,4 +42,7 @@ export default {
 </script>
 
 <style lang="less">
+.radio_group_title {
+  padding-top: 8px;
+}
 </style>
