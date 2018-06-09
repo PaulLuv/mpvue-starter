@@ -18,14 +18,26 @@
 export default {
   data() {
     return {
-      active_index: 0
+      active_index: 0,
+      length: this.banners.length
     };
+  },
+  onLoad() {
+    setInterval(function() {
+      if (this.active_index < this.length) {
+        this.active_index++;
+      }
+    }, this.duration);
   },
 
   props: {
     banners: {
       type: Array,
       required: true
+    },
+    duration: {
+      type: Number,
+      default: 500
     }
   }
 };
